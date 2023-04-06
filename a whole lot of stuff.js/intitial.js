@@ -305,3 +305,11 @@ const plantNeedsWater = function(day){
 }
 plantNeedsWater('Tuesday');
 console.log(plantNeedsWater('Tuesday'));
+// added an arrow function expression 
+/*const plantNeedsWater = (day) => {
+  if (day === 'Wednesday') {
+    return true;
+  } else {
+    return false;
+  }
+};*/
