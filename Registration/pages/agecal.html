@@ -1,9 +1,27 @@
-<!DOCTYPE html><html>
+<!DOCTYPE html>
+<html>
     <head>
         <title>Age Calculator</title>
-        <link rel="icon" type="image/x-icon" href="favicon.png">
+        <link rel="icon" type="image/x-icon" href="calculator.png">
+        <h1> Find out your current Age right here!</h1>
     </head>
+    <style>
+        body{
+            background-color: blueviolet;
+        }
+        h1{
+            font-family: monospace;
+            text-align: center;
+        }
+    </style>
     <body>
+        <label for="Year">Year of Birth:</label>
+		<!--<input type="number" id="pnumber" name="digits">-->
+		<input type="number" id="age" value = "" placeholder="YYYY"><br><br>
+        <button style = "margin-left: 4cm;" onclick="getAge()">Submit</button>
+        <script src="agecalc.js"></script>
+        
+        <p id="some_thing" style="color: magenta;"></p>
         
 
     </body>

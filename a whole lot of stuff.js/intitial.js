@@ -129,4 +129,160 @@ if(mood != 'sleepy' || tirednessLevel > 8){
 } else {
   console.log('not bed time yet');
 }
+//tenary operators
+let isLocked = false;
 
+isLocked ? console.log('You will need a key to open the door.') : console.log('You will not need a key to open the door.');
+
+
+let isCorrect = true;
+isCorrect ? console.log('Correct!') : console.log('Incorrect!');
+
+
+let favoritePhrase = 'Love That!';
+
+favoritePhrase === "Love That!" ? console.log('I love that!') : console.log("I don't love that!");
+
+//else if statements
+let season = 'summer';
+
+if (season === 'spring') {
+  console.log('It\'s spring! The trees are budding!');
+} else if (season === 'winter') {
+  console.log('It\'s winter! Everything is covered in snow.');
+}  else if (season === 'fall') {
+  console.log('It\'s fall! Leaves are falling!');
+} else if(season === 'summer'){
+  console.log('It\'s sunny and warm because it\'s summer!')
+}else{
+  console.log('Invalid season.');
+}
+//switchcase
+let athleteFinalPosition = 'first place';
+switch(athleteFinalPosition){
+  case 'first place' :
+    console.log("You get the gold medal!");
+    break;
+  case 'second place' :
+    console.log('You get the silver medal!');
+    break;
+  case 'third place' :
+    console.log('You get the bronze medal!');
+    break;
+  default:
+    console.log('No medal awarded.');
+    break;
+}
+//basiccally a review of everything
+let safe = 100;
+
+safe === 100 || safe != 2 ? console.log('Yup, the safe is locked!') : console.log('my g, btter watch the money');
+let safety = 0;
+switch(safety){
+  case 0 :
+    console.log("best be praying to the Lord");
+    break; 
+  default:
+    console.log('invalid response');
+    break;
+
+    
+    }
+//a super long switch function
+let userName = 'Elhanah';
+userName ? console.log(`Hello ${userName}!`) : console.log('Hello!');
+let userQuestion = 'Will I get married?';
+console.log(`${userQuestion}, ${userName}?`);
+let randomNumber = Math.floor(Math.random()* 8);
+let eightBall = '';
+switch(randomNumber){
+  case 0 :
+    eightBall = "It is certain";
+    console.log(`${eightBall}`);
+    break;
+  case 1 :
+    eightBall = "It is decidedly so";
+    console.log(`${eightBall}`);
+    break;
+  case 2 :
+    eightBall = "Reply hazy try again";
+    console.log(`${eightBall}`);
+    break;
+  case 3 :
+    eightBall = "Cannot predict now";
+    console.log(`${eightBall}`);
+    break;
+  case 4 :
+    eightBall = "Do not count on it";
+    console.log(`${eightBall}`);
+    break;
+  case 5 :
+    eightBall = "My sources say no";
+    console.log(`${eightBall}`);
+    break;
+  case 6 :
+    eightBall = "Outlook not so good";
+    console.log(`${eightBall}`);
+    break;
+  case 7 :
+    eightBall = "Signs point to yes";
+    console.log(`${eightBall}`);
+    break;
+  default :
+     console.log('I dunno, man.')
+}
+
+ 
+// control flow statements - the project
+let raceNumber = Math.floor(Math.random() * 1000);
+let registerTime = false;
+let runningAge = 18;
+ if(registerTime === true && runningAge >= 18){
+   raceNumber += 1000;
+ }
+ if(runningAge > 18 && registerTime === true){
+   console.log(` Adult Runner ${raceNumber} will race at 9:30AM.`);
+ } else if(runningAge > 18 && registerTime === false){
+    console.log(` Adult Runner ${raceNumber} will race at 11:00AM.`);
+ } else if(runningAge < 18){
+   console.log(`Youth Runner ${raceNumber} will race at 12:30PM (reagrdless of registration)`);
+ } else{
+   console.log('Please see the Registration Desk.');
+ }
+//introduction to functions
+function getReminder(){
+  console.log('Water the plants.');
+}
+function greetInSpanish(){
+  console.log('Buenas tardes.')
+}
+//more on repetitive functions
+function sayThanks(){
+  console.log('Thank you for your purchase! We appreciate your business.');
+}
+sayThanks(); // don't forget the brackets
+sayThanks();
+sayThanks();
+
+//adding lessons in parameters
+function sayThanks(name) {
+  console.log('Thank you for your purchase '+ name + '! We appreciate your business.');
+}
+//parameters are basicalling identifying the input to the formula you want to use/create
+sayThanks('Cole');//then you put the actual figures/words when you're calling the function
+
+//default parameters
+function makeShoppingList(item1 = "milk", item2 = "bread", item3 = "eggs"){
+  console.log(`Remember to buy ${item1}`);
+  console.log(`Remember to buy ${item2}`);
+  console.log(`Remember to buy ${item3}`);
+}
+
+//using the return function
+function monitorCount(rows, columns){
+  return rows * columns;
+}
+ const numOfMonitors = monitorCount(5,4);
+ console.log(numOfMonitors);
+
+//a lesson in 
