@@ -315,3 +315,16 @@ console.log(plantNeedsWater('Tuesday'));
 };*/
 /* tenary expression and a concise body arrow function
 const plantNeedsWater = day => day === 'Wednesday' ? true : false;*/
+const sunflower = (dynamo) => {
+  return dynamo; // arrow function
+}
+const sundown = dyna => console.log("beep~"); // concise body arrow function
+
+//added a lesson in blocks of code
+const city = "New York City";
+function logCitySkyline(){
+  let skyscraper = "Empire State Building";
+  return 'The stars over the ' + skyscraper + ' in ' + city;
+}
+console.log(logCitySkyline());
+
