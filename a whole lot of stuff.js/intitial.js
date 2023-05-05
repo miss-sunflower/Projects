@@ -327,4 +327,40 @@ function logCitySkyline(){
   return 'The stars over the ' + skyscraper + ' in ' + city;
 }
 console.log(logCitySkyline());
+//a lesson in global and local variables
+const logVisibleLightWaves = () => {
+  let lightWaves = 'Moonlight';
+	let region = 'The Arctic';
+  // Add if statement here:
+  if(region === "The Arctic"){
+    let lightWaves = "Northern Lights";
+    console.log(lightWaves);
+  }
+  
+  console.log(lightWaves);
+};
+
+logVisibleLightWaves();
+//original experiment for the code blocks and scopes
+const flower = "Sunflower"; //global variable
+const variety = "Chrysanthemum";
+
+const field = () => { //start of a code block
+   let flower = "Daisy"; // local variable
+   return flower;
+}//end of code block
+console.log(field());
+console.log(flower);
+console.log(variety);
+console.log('These flowers make for a pretty garden. I actually want a garden.')
+
+//creating a lesson in arrays
+let newYearsResolutions = ['Keep a journal', 'Take a falconry class', 'Learn to juggle'];
+
+console.log(newYearsResolutions);
+
+//here are some hobbies
+const hobbies = ['drawing', 'surviving', 'eating gummy bears'];
+console.log(hobbies);
+
 
