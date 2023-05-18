@@ -38,7 +38,7 @@ let place;
 function archivetask(){
     //hide instead of delete?
     //find index of selected array Item onclick? onselect?
-    //place = [list.indexOf('mop room')]; // this looks like magic/sorcery
+    //place = list.indexOf('mop room'); // this looks like magic/sorcery
     compItem = input.splice(1, 2); //to remove said item
     //compItem = input[1];
     console.log(compItem.join('--'));

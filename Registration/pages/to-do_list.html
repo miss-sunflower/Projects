@@ -2,17 +2,62 @@
 <html>
 <head>
     <title>To-DO.</title>
-    <link rel="icon" type="image/x-icon" href="sun.png">
+    <link rel="icon" type="image/x-icon" href="toodoo.png">
+    <div style="text-align: center;">
+        <img src= "checklist.png" length="200px" width = "100px" style = "text-align: center;"></img>
+ 
+    </div>
+
+   <h1 style = "padding-top: -4cm;">TO-DO</h1>
+   
+    
 </head>
 <style>
-        body{
-            background-color: blueviolet;
+        button{
+            background-color: rgb(141, 141, 228);
+            border: 1mm;
+
+            
         }
+        
+        h1{
+            text-align: center;
+            font-family:Times, "Times New Roman", Georgia, serif  ;
+            text-decoration: line-through;
+        }
+        div{
+            text-align: center;
+        }
+        .completetasks{
+            text-align: center;
+
+        }
+
 </style>
 <body>
-        <p>This is your friendly to-do List!</p>
-		<input type="text" id="ltask" placeholder="New Quest"><button onclick="SubmitEvent">
+    <div>
+        <p style = "text-align: center;">This is your friendly to-do List!</p>
+		<input type="text" id="ltask" placeholder="New Quest">
+        <button  name=" completetasks" onclick="addtask()">Add Quest</button>
+       <!--<button onclick = "addtask()">Added Quests</button><br><br>--> 
+    
+                <input style ="text-align: center; text-decoration: line-through;" id = "ctasks" class="completetasks">
+    
+            <script>
+                function addtask(){
+                    
+                    const input = [document.getElementById('ltask').value];
+                    console.log(input); 
+                }
+            </script>
+            
+            
+            
+                <p id="ltask"></p>
+        
             <!--there should be checkboxes next to the items-->
+
+        </div>
 
 
 
