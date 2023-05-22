@@ -3,7 +3,7 @@ let newItem; //give the list housing outside the function to make sure it works 
 let list = []; //actual housing for the list
 //let input = ['fold laundry', 'mop room', 'try not to kms'];
 function addtask(){
-            const input = document.getElementById('ltask').value;//to collect the input from the text box
+            let input = document.querySelector('#ltask').value;//to collect the input from the text box
             list.push(input); //collects the input
             console.log(list.join('-')); 
 }
